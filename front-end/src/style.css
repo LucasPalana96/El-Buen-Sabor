@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin:0;
+    /*font-family: lato;*/
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.header{
+    background-color: #FFD184;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center
+    
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: #333333;
+}
+
+.header H3{
+    display: flex;
+    align-items: center;
+    font-family: Montserrat Alternates;
+}
+
+header nav ul li{
+    list-style: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HOME~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#popular{
+    display: flex;
+    flex-direction: column;   
+}
+
+#container-pop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+
+
+}
+
+#categories{
+    display: flex;
+    flex-direction: column;   
+}
+
+#container-cat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+
+
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.footer{
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    display: row;
+}
