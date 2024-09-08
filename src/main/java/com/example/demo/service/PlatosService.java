@@ -7,21 +7,27 @@ import com.example.demo.models.enums.Tipo;
 import com.example.demo.repository.PlatoJpaRepository;
 import com.example.demo.repository.PlatoRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.swing.*;
 import java.util.List;
 @Service
-@AllArgsConstructor
 public class PlatosService {
 
-    //private  PlatoRepository platoRepository;
-    //JPA repository
-    private final PlatoJpaRepository platoJpaRepository;
+    private  PlatoRepository platoRepository;
 
-    //public List<Plato> getAllPlatos() {
-      //  return platoRepository.findAll();
-    //}
+    public PlatosService(PlatoRepository platoRepository) {
+        this.platoRepository = platoRepository;
+    }
+
+    //JPA repository
+    @Autowired
+    private PlatoJpaRepository platoJpaRepository;
+
+    public List<Plato> getAllPlatos() {
+       return platoRepository.findAll();
+    }
 
     public String addPlatos(PlatoRequestDTO platoDTO) {
 
