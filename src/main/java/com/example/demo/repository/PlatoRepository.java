@@ -1,14 +1,16 @@
-package com.example.demo.Plato;
+package com.example.demo.repository;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.example.demo.models.Plato;
+import com.example.demo.models.enums.Tipo;
 import org.springframework.stereotype.Repository;
 import jakarta.annotation.PostConstruct;
 
 @Repository
 public class PlatoRepository {
     private List<Plato> platos = new ArrayList<Plato>();
-    List<Plato> findAll(){
+    public List<Plato> findAll(){
         return platos;
     }
     @PostConstruct

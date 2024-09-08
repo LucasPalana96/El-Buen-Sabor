@@ -1,5 +1,14 @@
-package com.example.demo.Plato;
+package com.example.demo.models;
 
+import com.example.demo.models.enums.Tipo;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+//With Lombok
+@Getter
+@Setter
+@AllArgsConstructor
 public class Plato {
     private String name;
     private String description;
@@ -7,6 +16,9 @@ public class Plato {
     private Double price;
     private int stock;
     private boolean avaliable;
+
+    // Without lombok
+    /*
     public Plato(String name, String description, Tipo type, Double price, int stock, boolean avaliable) {
         this.name = name;
         this.description = description;
@@ -15,6 +27,7 @@ public class Plato {
         this.stock = stock;
         this.avaliable = avaliable;
     }
+
     public String getName() {
         return name;
     }
@@ -51,5 +64,5 @@ public class Plato {
     public void setAvaliable(boolean avaliable) {
         this.avaliable = avaliable;
     }
-    
+    */
 }
