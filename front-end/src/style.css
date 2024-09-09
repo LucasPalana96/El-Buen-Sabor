@@ -35,7 +35,48 @@ header nav ul li{
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HOME~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+#home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
 
+}
+#pizza2 {
+    height: 500px;
+    width: 500px;
+    top: 198px;
+    left: 808px;
+}
+#container-text{
+    display: flex;
+    flex-direction: column;
+
+}
+#main-text{
+    width: 657px;
+    height: 299px;
+    top: 250px;
+    left: 63px;
+}
+#container-text h1{
+    display: flex;
+    flex-direction: row;
+
+    font-size: 70px;
+}
+.word-main{
+    font-family: Lato;
+}
+.word-black{
+    color: #333333;
+}
+.word-orange{
+    color: #FFA101
+}
+#text-h4{
+    color: #666666;
+    font-family: Righteous;
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
